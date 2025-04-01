@@ -3,7 +3,7 @@
     "target": "ESNext",
     "module": "ESNext",
     "esModuleInterop": true,
-    "outDir": "./public/js/",
+    "outDir": "./dist/",
     "noEmitOnError": true,
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": true,
