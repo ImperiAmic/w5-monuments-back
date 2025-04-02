@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
-import { Location, MonumentStructure } from "./types";
+import { Location, MonumentStructure } from "./types.js";
 
 class Monument implements MonumentStructure {
   public id: string;
@@ -10,7 +10,7 @@ class Monument implements MonumentStructure {
     public name: string,
     public description: string,
     public imageUrl: string,
-    location: Location,
+    public location: Location,
   ) {
     this.id = uuidv4();
     this.city = location.city;
