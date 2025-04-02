@@ -1,4 +1,4 @@
-import Monument from "../monuments/Monument.js";
+import Monument from "../Monument.js";
 
 const gizaPyramids = new Monument(
   "Giza pyramid complex",
