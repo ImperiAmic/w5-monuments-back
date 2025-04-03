@@ -16,7 +16,7 @@ const chinaWall = new Monument(
   "https://upload.wikimedia.org/wikipedia/commons/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg",
   {
     city: "Several locations",
-    country: "Chine",
+    country: "China",
   },
 );
 
