@@ -10,7 +10,7 @@ class Monument implements MonumentStructure {
     public name: string,
     public description: string,
     public imageUrl: string,
-    public location: Location,
+    location: Location,
   ) {
     this.id = uuidv4();
     this.city = location.city;
