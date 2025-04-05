@@ -10,7 +10,10 @@ const app = express();
 app.use(morgan("dev"));
 app.use(
   cors({
-    origin: "https://imperiamic-monuments-front.netlify.app/",
+    origin: [
+      "https://imperiamic-monuments-front.netlify.app/",
+      "http://localhost:5173/",
+    ],
     credentials: true,
   }),
 );
