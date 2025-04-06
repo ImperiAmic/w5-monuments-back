@@ -14,9 +14,12 @@ app.use(
     credentials: true,
   }),
 );
+app.use(express.json());
 
 app.get("/", checkHealthStatus);
+
 app.use("/monuments", monumentsRouter);
+
 app.use(handlerEndpointNotFound);
 
 export default app;
