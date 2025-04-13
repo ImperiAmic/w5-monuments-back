@@ -6,6 +6,15 @@ const config: Config = {
   rootDir: "src",
   preset: "ts-jest",
   resolver: "ts-jest-resolver",
+  collectCoverageFrom: [
+    "**/*.ts",
+    "!index.ts",
+    "!monument/data/monuments.ts",
+    "!monument/router/monumentsRouter.ts",
+    "!server/app.ts",
+    "!server/startServer.ts",
+  ],
+  coverageDirectory: "../coverage",
   ...createDefaultPreset(),
 };
 
