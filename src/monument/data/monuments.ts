@@ -50,7 +50,7 @@ const chichenItza = new Monument(
 const machuPicchu = new Monument(
   "Machu Picchu",
   "Machu Picchu, an ancient Incan citadel in the Andes Mountains of Peru, is renowned for its breathtaking scenery, sophisticated dry-stone construction, and historical significance as a royal estate.",
-  "https://i.imgur.com/nxwhi1p.jpeg",
+  "https://i.ibb.co/5hrLPLMD/machu-picchu.webp",
   {
     city: "Cusco",
     country: "Peru",
@@ -60,7 +60,7 @@ const machuPicchu = new Monument(
 const tajMahal = new Monument(
   "Taj Mahal",
   "The Taj Mahal, a white marble mausoleum in India, was built by Emperor Shah Jahan in memory of his wife, symbolizing eternal love and showcasing Mughal architectural brilliance.",
-  "https://i.ibb.co/5hrLPLMD/machu-picchu.webp",
+  "https://i.ibb.co/S48XK3Vz/taj-mahal.webp",
   {
     city: "Agra",
     country: "India",
