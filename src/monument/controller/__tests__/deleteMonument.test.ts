@@ -3,7 +3,7 @@ import { barAmadeo, iglesuelaMonuments } from "../../fixture.js";
 import MonumentController from "../MonumentController.js";
 import Monument from "../../Monument.js";
 
-describe("Given the deleteMonument method from the MonumentController class", () => {
+describe("Given the deleteMonument method from MonumentController class", () => {
   const res = {
     status: jest.fn().mockReturnThis(),
     json: jest.fn(),

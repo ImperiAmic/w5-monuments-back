@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import MonumentController from "../MonumentController.js";
 import { barAmadeo, ermitaCid, iglesuelaMonuments } from "../../fixture.js";
 
-describe("Given the getMonuments method of the class MonumentController", () => {
+describe("Given the getMonuments method from MonumentController class", () => {
   describe("When it receives a request and a response", () => {
     const req = {} as Request;
     const res = {
@@ -10,14 +10,16 @@ describe("Given the getMonuments method of the class MonumentController", () => 
       json: jest.fn(),
     } as Pick<Response, "status" | "json">;
 
+    let monumentController: MonumentController;
+
     beforeEach(() => {
+      monumentController = new MonumentController(iglesuelaMonuments);
+
       jest.clearAllMocks();
     });
 
     test("Then it should it call the received response's method status with 200", () => {
       const expectedStatusCode = 200;
-
-      const monumentController = new MonumentController(iglesuelaMonuments);
 
       monumentController.getMonuments(req, res as Response);
 
@@ -28,8 +30,6 @@ describe("Given the getMonuments method of the class MonumentController", () => 
       const expectedMessage = {
         monuments: [ermitaCid, barAmadeo],
       };
-
-      const monumentController = new MonumentController(iglesuelaMonuments);
 
       monumentController.getMonuments(req, res as Response);
 
