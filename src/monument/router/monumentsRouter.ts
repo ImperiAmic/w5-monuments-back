@@ -10,4 +10,9 @@ monumentsRouter.get("/", monumentController.getMonuments);
 
 monumentsRouter.post("/add-monument", monumentController.addMonuments);
 
+monumentsRouter.delete(
+  "/delete/:monumentId",
+  monumentController.deleteMonument,
+);
+
 export default monumentsRouter;
